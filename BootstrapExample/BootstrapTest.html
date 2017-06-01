@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width initial-scale = 1"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        h1, p {
+            font-family:'Arial','sans-serif';
+        }
+        .slide1 {
+            background-image: url("Images/a.jpg");
+            color: white;
+            height: 200px;
+            width: 1600px;
+           
+        }
+
+        .slide2 {
+            background-image: url("Images/b.jpg");
+            color: white;
+            height: 200px;
+            width: 16000px;
+           
+        }
+
+
+        .slide3 {
+            background-image: url("Images/c.jpg");
+            color: white;
+            height: 200px;
+            width: 16000px;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#theCarousel" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#theCarousel" data-slide-to="1"></li>
+            <li data-target="#theCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="slide1"></div>
+                <div class="carousel-caption">
+                    <h1>Amazing Backgrounds</h1>
+                    <p>Thousand of Backgrounds for free</p>
+                    <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide2"></div>
+                <div class="carousel-caption">
+                    <h1>Thousnsof Colorsa </h1>
+                    <p>Every Color you can imagine</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide3"></div>
+                <div class="carousel-caption">
+                    <h1>Amazing illustration</h1>
+                    <p>And the are all free</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+   
+
+
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
